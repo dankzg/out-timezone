@@ -73,7 +73,7 @@ userTimezone.value = base.timezone.toString()
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 1em;
+  padding: 0.5em;
   font-weight: bolder;
   display: flex;
 }
@@ -96,7 +96,13 @@ userTimezone.value = base.timezone.toString()
   align-items: center;
   height: 55%;
   font-size: 60px;
-  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .time {
+    font-size: 45px;
+    height: 50%;
+  }
 }
 
 .local {
@@ -117,5 +123,15 @@ userTimezone.value = base.timezone.toString()
   font-size: 18px;
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .city {
+    font-size: 20px;
+  }
+  .country {
+    font-size: 12px;
+    padding-button: 10px;
+  }
 }
 </style>

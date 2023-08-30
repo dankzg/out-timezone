@@ -111,6 +111,12 @@ const baseImgUrl = ref("this.src='/base_clock.jpg'")
   margin: 1em;
 }
 
+@media screen and (max-width: 500px) {
+  .timezone-card {
+    width: 100%;
+  }
+}
+
 .image {
   width: 100%;
   height: 100%;

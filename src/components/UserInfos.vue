@@ -5,7 +5,7 @@
  * @Author: dank.zheng
  * @Date: 2023-08-19 12:04:13
  * @LastEditors: dank.zheng
- * @LastEditTime: 2023-08-22 16:35:00
+ * @LastEditTime: 2023-08-30 09:08:21
 -->
 <script setup lang="ts">
 import { ref, getCurrentInstance } from 'vue'
@@ -152,17 +152,38 @@ const calcTimezone = () => {
   overflow: hidden;
   border: 1px solid var(--border-color);
 }
+
+@media screen and (max-width: 500px) {
+  .userinfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
 .left-userinfo {
   position: relative;
   width: 600px;
   z-index: 0;
 }
 
+@media screen and (max-width: 500px) {
+  .left-userinfo {
+    width: 100%;
+  }
+}
 .right-wakeuptime {
   display: flex;
   flex-direction: column;
   width: 200px;
   margin: 1em;
   justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .right-wakeuptime {
+    width: 100%;
+  }
 }
 </style>
