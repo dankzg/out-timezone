@@ -5,7 +5,7 @@
  * @Author: dank.zheng
  * @Date: 2023-08-19 07:23:25
  * @LastEditors: dank.zheng
- * @LastEditTime: 2023-08-21 13:50:58
+ * @LastEditTime: 2023-08-30 08:57:40
  */
 import { fileURLToPath, URL } from 'node:url'
 
@@ -42,4 +42,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  server: {
+    host: '0.0.0.0',
+  }
 })
